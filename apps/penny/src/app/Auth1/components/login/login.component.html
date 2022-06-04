@@ -3,7 +3,7 @@
     <div class="col-md-4 mx-auto mt-5">
       <h1>Log in</h1>
       <hr>
-      <div class="alert alert-danger" *ngIf= 'users$ | async  as error'>{{error}}</div>
+      <div class="alert alert-danger" *ngIf= 'users$  as error'>{{error}}</div>
       <form (ngSubmit)="onSubmit()" ngNativeValidate>
         <div class="form-group" >
           <label for="email">Email</label>
