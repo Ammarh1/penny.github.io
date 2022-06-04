@@ -12,7 +12,4 @@ export class StartingComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  LogOut(): void { 
-    this.store.dispatch(new LogOut)
-  }
 }
