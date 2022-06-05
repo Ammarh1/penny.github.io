@@ -42,7 +42,7 @@ export class LoginController {
         const data = await this.jwtservice.verifyAsync(cookie)
         
         if (!data){
-            throw new UnauthorizedException({message: "You Are Authorized"});
+            throw new UnauthorizedException({message: "You Not Are Authorized"});
         }
 
         return {message: "You Are Authorized"}
